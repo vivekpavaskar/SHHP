@@ -16,6 +16,12 @@
                     <p>Dashboard</p>
                 </a>
             </li>
+            <li>
+                <a href="/regComplaint">
+                    <i class="tim-icons icon-chart-pie-36"></i>
+                    <p>Register New Complaint</p>
+                </a>
+            </li>
         </ul>
     </div>
 </div>

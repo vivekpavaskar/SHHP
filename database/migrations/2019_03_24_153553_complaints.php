@@ -16,9 +16,9 @@ class Complaints extends Migration
         Schema::create('complaints', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('uid');
-            $table->string('statement',1000);
-            $table->string('video',15);
-            $table->string('status',10);
+            $table->string('statement',10000);
+            $table->string('video',20);
+            $table->string('status',10)->default('Applied');
             $table->timestamps();
         });
     }
