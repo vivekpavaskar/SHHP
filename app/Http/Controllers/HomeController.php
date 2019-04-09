@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Complaint;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('regular.index');
+        $complaints=Complaint::where('uid',auth()->user()->id)->latest()->get();
+        // dd($complaints);
+        return view('regular.index')->with('complaints',$complaints);
     }
 }

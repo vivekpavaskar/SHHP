@@ -28,6 +28,7 @@
             @include('db.topnav')
             <!-- End Navbar -->
             <div class="content">
+                @include('db.notification')
                 @yield('content')
             </div>
             @include('db.footer')
