@@ -20,7 +20,7 @@
     {{-- <link href="/assets-db/demo/demo.css" rel="stylesheet" /> --}}
 </head>
 
-<body>
+<body class="white-content">
     <div class="wrapper">
         @include('db.sidebar')
         <div class="main-panel">
