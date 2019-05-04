@@ -23,7 +23,7 @@ class Complaints extends Migration
             $table->string('adesg',100);
             $table->string('state',100);
             $table->string('district',100);
-            $table->string('statement',10000);
+            $table->mediumText('statement');
             $table->string('video',20);
             $table->string('status',10)->default('Applied');
             $table->timestamps();
